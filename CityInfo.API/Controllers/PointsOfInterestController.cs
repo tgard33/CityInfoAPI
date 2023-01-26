@@ -42,9 +42,9 @@ namespace CityInfo.API.Controllers
             return Ok(pointOfInterest);
         }
 
-        [HttpPost]
-        public ActionResult<PointOfInterestDto> CreatePointOfInterest(
-            int cityID,
-            PointOfInterestForCreationDto)
+        //[HttpPost]
+        //public ActionResult<PointOfInterestDto> CreatePointOfInterest(
+        //    int cityID,
+        //    PointOfInterestForCreationDto)
     }
 }
