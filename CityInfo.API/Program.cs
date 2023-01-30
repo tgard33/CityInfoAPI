@@ -8,7 +8,8 @@ builder.Services.AddControllers(options =>
 { 
     // returns 406 not acceptable for any format not set up to be accepted
     options.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters(); // Adds XML as acceptable format
+})  .AddNewtonsoftJson() // replaces JSON input and output formatters with Json.Net
+    .AddXmlDataContractSerializerFormatters(); // Adds XML as acceptable format
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
